@@ -1,0 +1,344 @@
+@font-face {
+  font-family: "SuperPositive";
+  src: url("../fonts/Super%20Positive%20Personal%20Use.ttf") format("truetype");
+}
+:root {
+  --branco: #ffffff;
+  --azul: #1d3f4b;
+  --principal: #1973cf;
+  --secundaria: #080d1c;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--secundaria);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--principal);
+}
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@font-face {
+  font-family: "Brocats";
+  src: url("../Brocats.tff") format("truetype");
+}
+
+.session01 {
+  width: 100vw;
+  height: 95vh;
+  background-image: var(--background-imagem-p1);
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: var(--secundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imag img {
+  width: 10%;
+}
+.imag {
+  width: 100%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 726px) {
+  .imag img {
+    width: 30%;
+  }
+}
+.directs h2 {
+  font-size: 1.2rem;
+}
+.directs {
+  color: #fff;
+  font-family: "SuperPositive", sans-serif;
+  text-align: center;
+  padding-bottom: 0.45rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #141414;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.sidemenu {
+  background: var(--secundaria);
+  padding: 0.2rem;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.header {
+  background: #141414;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  margin-top: 1.5vh;
+}
+
+.container {
+  box-shadow: 0 0 10px var(--principal);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secundaria);
+  margin: 12px;
+  aspect-ratio: 9 / 16;
+}
+
+.pulsar {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidemenu .commun1 {
+  font-family: "SuperPositive", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidemenu .commun2 {
+  font-family: "SuperPositive", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.sidemenu .commun3:hover {
+  background: var(--principal);
+  color: #fff;
+}
+
+.sidemenu .commun3 {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--principal);
+  transition: all 0.3s;
+  font-family: "SuperPositive", sans-serif;
+  color: #fff;
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidemenu .commun3.rige {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 726px) {
+  .sidemenu {
+    width: 85%;
+  }
+  .sidemenu .communA:nth-child(2) {
+    display: none;
+  }
+  .sidemenu .communA:nth-child(1) {
+    display: none;
+  }
+}
+
+.gif-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 10px;
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+  max-width: 95%;
+}
+
+.gif-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid var(--principal);
+  display: none; /* Inicialmente escondido */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.gif-container button {
+  background-color: var(--principal);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 21px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "SuperPositive", sans-serif;
+}
+
+.gif-container button:hover {
+  background-color: #0477e9;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .gif-container {
+    width: 100%;
+    height: auto;
+  }
+  .gif-container img {
+    width: 100%;
+    height: auto;
+  }
+  .gif-container button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+  .loading-bar {
+    height: 15px;
+  }
+  .validity-text {
+    font-size: 14px;
+  }
+  .status-text {
+    font-size: 14px;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+.message {
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 18px;
+  border: 2px solid var(--principal);
+  width: 90%;
+  max-width: 600px;
+  margin-top: 1vh;
+}
+
+.status-text {
+  position: relative;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: none; /* Inicialmente escondido */
+}
+
+.validity-text {
+  position: relative;
+  top: 0;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 0.5vh;
+  font-size: 18px;
+  display: none; /* Inicialmente escondido */
+  font-size: 14px;
+}
+
+.buttonCadastrar-video {
+  display: flex;
+  justify-content: center;
+}
+.buttonCadastrar-video button {
+  font-weight: 800;
+  color: #fff;
+  padding: 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 145%;
+  border-top-right-radius: 40px;
+  font-family: "SuperPositive", sans-serif;
+  margin-top: 1.6rem;
+  border-bottom-left-radius: 40px;
+  background: var(--principal);
+  width: 45vh;
+  margin-bottom: 2.5vh;
+  max-width: 42vh;
+}
